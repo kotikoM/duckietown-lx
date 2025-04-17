@@ -38,11 +38,9 @@ def PIDController(
     ki = gains['ki']
 
     # ------------- DEFINE YOUR PID FUNCTION BELOW ---------
-
-    # These are random values, replace with your implementation of a PID controller in here
-    omega = np.random.uniform(-8.0, 8.0)
-    e = np.random.random()
-    e_int = np.random.random()
-    # ---
+    e = y_ref - y_hat # Since we now have this lateral offset, the error isn't the heading but instead the duckiebot's y position
+    e_int = prev_int_y + e*delta_t # Since computers can't do integrals, we instead use the approximation of doing the pervious integral_error term + current error * time_step
+    e_deriv = (e - prev_e_y)/delta_t # Recall that to approximate derivatives, we use a backwards Euler which is really just rise over run
     
+    omega = (kp * e) + (ki * e_int) + (kd * e_deriv) 
     return v_0, omega, e, e_int
