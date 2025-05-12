@@ -1,0 +1,28 @@
+circle C1 100 100 50
+circle C2 150 150 30
+rectangle R1 200 200 80 40 0
+rectangle R2 250 250 60 60 45
+circle C3 300 300 40
+rectangle R3 350 350 50 30 -30
+circle C4 400 400 25
+rectangle R4 100 200 100 50 0
+circle C5 500 500 60
+rectangle R5 500 100 70 70 90
+circle C6 100 500 35
+rectangle R6 600 600 40 40 10
+circle C7 700 700 45
+rectangle R7 700 100 30 60 -45
+rectangle R8 150 150 100 50 45
+circle C8 500 500 30
+rectangle R9 500 100 30 30 90
+circle C9 200 500 50
+rectangle R10 50 400 100 50 0
+rectangle R11 180 500 35 35 0
+rectangle R12 600 300 100 50 0
+circle C10 700 300 25
+rectangle R13 300 600 100 50 0
+circle C11 350 580 25
+rectangle R14 700 400 100 50 0
+circle C12 680 480 20
+rectangle R15 600 150 100 50 0
+circle C13 650 170 20
